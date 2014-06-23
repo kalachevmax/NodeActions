@@ -1,0 +1,27 @@
+{
+  "name": "NodeActsLibrary",
+
+  "buildDir": "bin",
+  "buildFileName": "act.js",
+
+  "compilerOptions": {
+    "compilationLevel": "SIMPLE_OPTIMIZATIONS",
+    "warningLevel": "VERBOSE",
+    "language": "ECMASCRIPT5",
+    "formatting": ""
+  },
+
+  "srcDir": "lib",
+  "rootNamespace": "act",
+
+  "src": [
+    "act.js",
+    "fs/fs.js"
+  ],
+
+  "externs": "externs",
+
+  "deps": [{
+    "justFM": "https://github.com/kalachevmax/justFM"
+  }]
+}
