@@ -18,7 +18,7 @@
       "src": [
         "act.js",
         "fs/fs.js",
-        "fs/chunks/chunks.js",
+        "fs/stream/stream.js",
         "proc/proc.js"
       ]
     }
