@@ -18,8 +18,14 @@
       "src": [
         "act.js",
         "fs/fs.js",
+        "fs/dir/dir.js",
+        "fs/file/file.js",
+        "fs/node/node.js",
+        "fs/tree/tree.js",
         "fs/stream/stream.js",
-        "proc/proc.js"
+        "proc/proc.js",
+        "tree/node/node.js",
+        "tree/tree.js"
       ]
     }
   },
