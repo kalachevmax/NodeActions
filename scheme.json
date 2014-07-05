@@ -33,6 +33,7 @@
   "externsDir": "externs",
 
   "deps": {
-    "justFM": "https://github.com/kalachevmax/justFM"
+    "justFM": "https://github.com/kalachevmax/justFM",
+    "justDM": "https://github.com/kalachevmax/justDM"
   }
 }
