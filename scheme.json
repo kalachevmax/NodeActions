@@ -18,6 +18,7 @@
       "src": [
         "act.js",
         "fs/fs.js",
+        "fs/type.js",
         "fs/dir/dir.js",
         "fs/file/file.js",
         "fs/node/node.js",
