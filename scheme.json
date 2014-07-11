@@ -25,6 +25,7 @@
         "fs/tree/tree.js",
         "fs/stream/stream.js",
         "fs/file-link.js",
+        "fs/directory-link.js",
         "fs/type-provider.js",
         "proc/proc.js",
         "tree/node/node.js",
