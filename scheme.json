@@ -27,9 +27,7 @@
         "fs/file-link.js",
         "fs/directory-link.js",
         "fs/type-provider.js",
-        "proc/proc.js",
-        "tree/node/node.js",
-        "tree/tree.js"
+        "proc/proc.js"
       ]
     }
   },
@@ -38,6 +36,7 @@
 
   "deps": {
     "justFM": "https://github.com/kalachevmax/justFM",
-    "justDM": "https://github.com/kalachevmax/justDM"
+    "justDM": "https://github.com/kalachevmax/justDM",
+    "justAM": "https://github.com/kalachevmax/justAM"
   }
 }
