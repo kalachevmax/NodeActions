@@ -1,0 +1,1 @@
+"var fm = require('../deps/semantics.fm.js');var dm = require('../deps/semantics.dm.js');var am = require('../deps/semantics.am.js');%output%module.exports = act;"
