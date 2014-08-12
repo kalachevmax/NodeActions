@@ -14,7 +14,7 @@
   "rootNamespace": "act",
 
   "modules": {
-    "act": {
+    "semantic.node.actions": {
       "src": [
         "act.js",
         "fs/fs.js",
