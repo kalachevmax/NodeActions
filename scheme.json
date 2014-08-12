@@ -20,7 +20,7 @@
         "fs/fs.js",
         "fs/type.js",
         "fs/dir/dir.js",
-        "fs/dir/get/get.js",
+        "fs/dir/read/read.js",
         "fs/file/file.js",
         "fs/node/node.js",
         "fs/node/is/is.js",
