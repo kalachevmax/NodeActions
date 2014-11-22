@@ -17,7 +17,15 @@
     "semantic.node.actions": {
       "src": [
         "act.js",
-        "fs/type.js",
+        "type.js",
+        "type-provider.js",
+
+        "dm/entity.js",
+        "dm/entity-type.js",
+        "dm/file.js",
+        "dm/symbol/FileContent.js",
+        "dm/new/file/file.js",
+
         "fs/dir/dir.js",
         "fs/dir/get/get.js",
         "fs/file/file.js",
@@ -27,7 +35,6 @@
         "fs/stream/stream.js",
         "fs/file-link.js",
         "fs/directory-link.js",
-        "fs/type-provider.js",
         "proc/proc.js",
         "hash/hash.js"
       ]
