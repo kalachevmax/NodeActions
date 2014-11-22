@@ -39,6 +39,7 @@
   "deps": {
     "semantic.fm": "https://github.com/kalachevmax/semantic.fm",
     "semantic.dm": "https://github.com/kalachevmax/semantic.dm",
-    "semantic.am": "https://github.com/kalachevmax/semantic.am"
+    "semantic.am": "https://github.com/kalachevmax/semantic.am",
+    "semantic.utils": "https://github.com/kalachevmax/semantic.utils"
   }
 }
