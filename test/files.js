@@ -1,10 +1,7 @@
 
 
 fm.script([
-  dm.OutputFile
-    .setEncoding('utf8')
-    .setMode(438)
-    .retrieveContent(act.fs.concat(fm.new.array(['file1.txt', 'file2.txt', 'file3.txt']))),
-
-  act.fs.file.write
-]);
+  fm.act(act.fs.files.concat, {sources: ['file1.txt', 'file2.txt', 'file3.txt'], target: 'output.txt'})
+])(function() {
+  console.log('Operation successfully completed.');
+}, console.error);
