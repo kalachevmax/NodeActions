@@ -1,7 +1,15 @@
 
 
 var script = fm.script([
-  act.fs.concat, ['file1.txt', 'file2.txt', 'file3.txt'], 'output.txt'
+  fm.Array(act.Type.FILE),
+  fm.field('target', 'output.txt'),
+
+  fm.field('sources', fm.script([
+    act.cli.read,
+    fm.ArrayString()
+  ])),
+
+  fm.do('concat')
 ]);
 
 
