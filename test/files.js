@@ -1,15 +1,25 @@
 
 
 var script = fm.script([
-  fm.Array(act.Type.FILE),
-  fm.field('target', 'output.txt'),
+  fm.List(act.Type.FILE),
 
   fm.field('sources', fm.script([
-    act.cli.read,
-    fm.ArrayString()
+    fm.String('Enter sources: '),
+    act.cli.put,
+
+    act.cli.get,
+    fm.ListString()
   ])),
 
-  fm.do('concat')
+  fm.field('target', fm.script([
+    fm.String('Enter target: '),
+    act.cli.put,
+
+    act.cli.get,
+    fm.String()
+  ])),
+
+  fm.concat
 ]);
 
 
