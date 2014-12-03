@@ -1,25 +1,19 @@
 
 
 var script = fm.script([
-  fm.List(act.Type.FILE),
-
-  fm.field('sources', fm.script([
-    fm.String('Enter sources: '),
+  fm.LIST_STRING(fm.script([
+    fm.STRING('Enter sources: '),
     act.cli.put,
-
-    act.cli.get,
-    fm.ListString()
+    act.cli.get
   ])),
 
-  fm.field('target', fm.script([
-    fm.String('Enter target: '),
+  fm.STRING('target', fm.script([
+    fm.STRING('Enter target: '),
     act.cli.put,
-
-    act.cli.get,
-    fm.String()
+    act.cli.get
   ])),
 
-  fm.concat
+  act.fs.concat
 ]);
 
 
