@@ -24,7 +24,6 @@
         "dm/entity-type.js",
         "dm/file.js",
         "dm/symbol/FileContent.js",
-        "dm/new/file/file.js",
 
         "fs/dir/dir.js",
         "fs/dir/get/get.js",
