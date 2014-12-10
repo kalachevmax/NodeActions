@@ -1,19 +1,17 @@
 
 
 var script = fm.script([
-  fm.LIST_STRING([
-    fm.STRING('Enter sources: '),
-    act.cli.put,
-    act.cli.get
-  ]),
+  act.fs.concat, {
+    sources: TStrList([
+      act.cli.put(TStr('Enter sources: ')),
+      act.cli.get
+    ]),
 
-  fm.STRING([
-    fm.STRING('Enter target: '),
-    act.cli.put,
-    act.cli.get
-  ]),
-
-  act.fs.concat
+    target: TStr([
+      act.cli.put(TStr('Enter target: ')),
+      act.cli.get
+    ])
+  }
 ]);
 
 
