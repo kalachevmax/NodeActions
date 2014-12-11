@@ -1,21 +1,13 @@
 
 
-var script = fm.script([
-  act.fs.concat, {
-    sources: TStrList([
-      act.cli.put(TStr('Enter sources: ')),
-      act.cli.get
-    ]),
-
-    target: TStr([
-      act.cli.put(TStr('Enter target: ')),
-      act.cli.get
-    ])
-  }
-]);
+var chain = [
+  FileNamesList([act.cli.put('Enter sources: '), act.cli.read]),
+  TargetFileName([act.cli.put('Enter target: '), act.cli.read]),
+  act.fs.concat
+];
 
 
-script(handleSuccess, console.error);
+fm.invoke(chain, handleSuccess, console.error);
 
 function handleSuccess() {
   console.log('Operation successfully completed.');
