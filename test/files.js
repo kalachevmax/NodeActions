@@ -1,13 +1,12 @@
 
 
-var chain = [
+var main = act.fs.concat(
   FileNamesList([act.cli.put('Enter sources: '), act.cli.read]),
-  TargetFileName([act.cli.put('Enter target: '), act.cli.read]),
-  act.fs.concat
-];
+  TargetFileName([act.cli.put('Enter target: '), act.cli.read])
+);
 
 
-fm.invoke(chain, handleSuccess, console.error);
+main(handleSuccess, console.error);
 
 function handleSuccess() {
   console.log('Operation successfully completed.');
