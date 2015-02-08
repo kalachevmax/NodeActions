@@ -28,6 +28,7 @@
         "fs/dir/dir.js",
         "fs/dir/get/get.js",
         "fs/file/file.js",
+        "fs/file/open-flag.js",
         "fs/node/node.js",
         "fs/node/is/is.js",
         "fs/tree/tree.js",
