@@ -1,23 +1,12 @@
 
 
-var script = fm.script([
-  fm.LIST_STRING(fm.script([
-    fm.STRING('Enter sources: '),
-    act.cli.put,
-    act.cli.get
-  ])),
-
-  fm.STRING('target', fm.script([
-    fm.STRING('Enter target: '),
-    act.cli.put,
-    act.cli.get
-  ])),
-
-  act.fs.concat
-]);
+var main = act.fs.concat(
+  FileNamesList([act.cli.put('Enter sources: '), act.cli.read]),
+  TargetFileName([act.cli.put('Enter target: '), act.cli.read])
+);
 
 
-script(handleSuccess, console.error);
+main(handleSuccess, console.error);
 
 function handleSuccess() {
   console.log('Operation successfully completed.');
